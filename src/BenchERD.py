@@ -155,7 +155,7 @@ for i in range(tables_number):
             connection.commit()
         except:
             pass
-dot = graphviz.Digraph('BenchER - Benchmark for ER-models', comment='Author: Moskalev Dmitry', format='svg')  
+dot = graphviz.Digraph('BenchERD - Benchmark for ER-model Diagram', comment='Author: Moskalev Dmitry', format='svg')  
 tables_per_schema = {k: v for k, v in tables_per_schema.items() if len(v) != 0}
 
 for i in result.index:
